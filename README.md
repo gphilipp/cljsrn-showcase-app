@@ -9,11 +9,11 @@ Here's what I used to create this small showcase app:
 # How to run
 1. `natal launch`
 2. `natal repl`
-3. Uncomment the `(navigator...)` form in `core.cljs`, this will reload the app and the buttons will appear.
 
 Notice that the blue buttons allow to switch between home and settings screens.
 
 # Problems
+- App won't reload changes in `core.cljs` unless the `(navigator...)` form is commented out.
 - Find a way to get the TabBarItems to interact with the navigator (an exception occurs with the current implementation).
 The idea is to have something similar to http://richardkho.com/persisting-tabbars-in-react-native.
 
