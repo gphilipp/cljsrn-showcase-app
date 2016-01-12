@@ -128,7 +128,7 @@
                              :marginBottom 20 :textAlign "center"}}
                     "Welcome 6!")
 
-              #_(navigator {:initialRoute {:name "home" :title "Home Next" :index 1}
+              (navigator {:initialRoute {:name "home" :title "Home Next" :index 1}
                           :ref (fn [navigator]
                                  (do (println "store reference of navigator in props")
                                      (om/transact! this [(`store-navigator {:navigator ~navigator})])
