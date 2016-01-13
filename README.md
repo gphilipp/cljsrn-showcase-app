@@ -10,14 +10,18 @@ Here's what I used to create this small showcase app:
 - `natal launch`
 - `natal repl`
 
-Notice that the blue buttons allow to switch between home and settings screens.
+
+# How it works
+
+Notice that both the blue buttons and the tab bar allow to switch between home and settings screens,
+
+![Screenshot](doc/cljsrn-showcase-app.png)
 
 # Problems
 
-1. App won't reload changes in `core.cljs` unless the `:ref` attribute in the  `(navigator...)` form is commented out.
-2. While the blue buttons work nicely with the navigator I couldn't find a way to get the TabBarItems
-to interact with the navigator (an exception occurs with the current implementation). The idea is to
-have something similar to http://richardkho.com/persisting-tabbars-in-react-native.
-3. Hitting CMD-R to reload will throw an exception : `TypeError: undefined is not an object (evaluating 'console._errorOriginal.apply')`
+1. App won't reload changes anymore in `core.cljs` if the ref fn used by the navigator transacts stuff into the app state
+2. Hitting CMD-R to reload will throw an exception : `TypeError: undefined is not an object (evaluating 'console._errorOriginal.apply')`
+
+
 
 
