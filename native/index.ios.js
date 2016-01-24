@@ -15,7 +15,7 @@ var {
 
 var { VectorIcon, } = require('react-native-vector-icons');
 var { FontAwesomeIcon, } = require('react-native-vector-icons/FontAwesome');
-
+var RNChart = require('react-native-chart');
 
 var CljsrnShowcaseApp = React.createClass({
   render: function() {
